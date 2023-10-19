@@ -7,7 +7,7 @@ Created on Thu Oct  8 23:29:10 2020
 from util import Util
 from iac_testing_antipatterns import IaCTestingAntipatterns
 
-# small comment
+# small comment number 2
 
 def main():
     
