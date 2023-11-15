@@ -1,14 +1,14 @@
-name: Codacy Analysis CLI
+name: Software Testing Analysis
 
 on: ["push"]
 
 jobs:
-  codacy-analysis-cli:
-    name: Codacy Analysis CLI
+  software-fuzzing-analysis:
+    name: Software Testing Analysis
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@main
-
-      - name: Run Codacy Analysis CLI
-        uses: codacy/codacy-analysis-cli-action@master
+      
+      - name: Run Testing Analysis
+        run: python test.py
